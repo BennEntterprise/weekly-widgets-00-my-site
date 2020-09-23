@@ -1,0 +1,14 @@
+{
+  "name": "my-site",
+  "version": "1.0.0",
+  "description": "A portfolio site",
+  "main": "server.js",
+  "scripts": {
+    "start": "serve"
+  },
+  "author": "Kyle Bennett",
+  "license": "ISC",
+  "dependencies": {
+    "serve": "^11.3.2"
+  }
+}

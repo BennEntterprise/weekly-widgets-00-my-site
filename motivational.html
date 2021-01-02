@@ -1,0 +1,65 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Self Motivational Page</title>
+    <style>
+      body {
+        text-align: center;
+      }
+
+      h1 {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 3rem;
+      }
+      .neon-off {
+        color: black;
+      }
+      .neon-on {
+        color: green;
+      }
+
+      ul {
+        background-color: rgb(187, 175, 175);
+        display: inline-block;
+      }
+      li {
+        color: royalblue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="title" class="neon-on">Self Motivation Page</h1>
+    <button id="toggleNeon" onclick="toggleNeon()">Toggle Neon</button>
+    <h2>You Got this! Check out some of your accolates:</h2>
+    <ul>
+      <li>Entreprenuer/Business Owner</li>
+      <li>Self Taught Full Stack Engineer</li>
+      <li>Teacher</li>
+      <li>Motivational Speaker</li>
+      <li>Social Justice Advocate</li>
+      <li>LGBTQ+ Ally</li>
+      <li>Visonary</li>
+      <li>Imaginative Child</li>
+    </ul>
+  </body>
+  <script>
+    var title = document.getElementById('title')
+
+    function toggleNeon() {
+      // Get the Current class of the Title
+      titleClass = title.classList
+      console.log('Current Class List ' + titleClass)
+      if (titleClass[0] === 'neon-on') {
+        title.classList = 'neon-off'
+      } else {
+        title.classList = 'neon-on'
+      }
+      console.log('Altered Class List ' + titleClass)
+    }
+
+    setInterval(function () {
+      toggleNeon()
+    }, 500)
+  </script>
+</html>
